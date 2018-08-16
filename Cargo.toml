@@ -1,0 +1,21 @@
+[package]
+name = "blogrs"
+version = "0.1.0"
+authors = ["chrisk24"]
+
+[development]
+template_dir = "templates"
+[production]
+template_dir = "templates"
+
+[dependencies]
+rocket = "0.3.15"
+rocket_codegen = "0.3.15"
+sqlite = "0.23.9"
+serde = "1.0.70"
+serde_derive = "1.0.70"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["handlebars_templates", "tera_templates"]

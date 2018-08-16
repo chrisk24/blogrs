@@ -1,0 +1,14 @@
+<div class="post-body">
+{{#each content.items as |post| ~}}
+<article>
+<div class="post-block">
+<h1 class="post-title">{{{post.title}}}</h1>
+<div class="post-date">{{post.date}}</div>
+<div class="hline"></div>
+<div class="post-text">{{{post.content}}}</div>
+<div class="hline"></div>
+<div class="post-footer">{{{post.footer}}}</div>
+</div>
+</article>
+{{/each~}}
+</div>

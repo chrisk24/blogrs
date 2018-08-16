@@ -1,0 +1,12 @@
+<div class="post-body">
+	<a href="/">Home</a><br><br>
+	{{#each content.items as |post| ~}}
+		<a class="browse-summary" href="/{{post.id}}">
+			<div>
+			{{post.title}}
+			<br>
+			{{post.date}}
+			</div>
+		</a>
+	{{/each~}}
+</div>

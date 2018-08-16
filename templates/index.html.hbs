@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Ramblings with Little Substance</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+		<link rel="stylesheet" href="res/style.css">
+	</head>
+	<body>
+		<div class="banner">
+			<span id="banner-expand-btn" onclick="bannerClick()">
+				&gt;
+			</span>
+		</div>
+		<div id="sidebar" class="sidebar-closed">
+			<div class="sidebar-block">
+				<div class="sidebar-header">
+					Chris' Junior Dev Journals
+				</div>
+				<img class="sidebar-profile-pic" src="https://i.imgur.com/eHVTT1M.jpg"></img>
+			</div>
+			
+			<div class="sidebar-block">
+				<div class="sidebar-link"><a href="/">Home</a></div>			
+				<div class="sidebar-link"><a href="https://github.com/chrisk24">Github</a></div>
+				<div class="sidebar-link"><a href="https://www.linkedin.com/in/christopher-knappers-183758156/">Linkedin</a></div>
+				<div class="sidebar-link"><a href="http://ironammonite.net">IronAmmonite</a></div>
+			</div>
+
+			<div class="sidebar-block">
+				<div class="sidebar-header">
+					Latest
+				</div>
+				{{#each summaries as |post| ~}}
+					<div class="sidebar-post-summary">
+						<a href="/{{post.id}}">
+						<span class="sidebar-post-summary-title">{{post.title}}</span>
+						<span class="sidebar-post-summary-date">{{post.date}}</span>
+						</a>
+					</div>
+				{{/each~}}
+				<a href="/browse">
+				<div class="sidebar-link">
+					More	
+				</div>
+				</a>
+			</div>
+		</div>
+		
+		{{~> (parent)~}}
+
+		<script src="res/script.js"></script>
+	</body>
+</html>
