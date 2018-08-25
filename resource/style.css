@@ -27,6 +27,7 @@ pre {
 	border-radius: 5px;
 	padding: 10px;
 	overflow: auto;
+	font-size: 85%;
 }
 
 img {
@@ -210,6 +211,8 @@ img {
 
 .sidebar-post-summary {
 	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-bottom: 1px dotted lightslategrey;
 	color: inherit;	
 }
@@ -230,7 +233,10 @@ img {
 	font-size: 20px;
 	color: grey;
 	text-decoration: none;
-	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: block;
+	margin-bottom: 5px;
 	border-bottom: 1px dotted black;
 }
 @media only screen and (min-width: 768px){
